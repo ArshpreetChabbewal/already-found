@@ -1,0 +1,59 @@
+.homepage__navbar {
+    background: rgb(169, 228, 228);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.homepage__logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.homepage__title {
+    font-size: 45px;
+    padding: 30px;
+    font-weight: 100;
+    margin-left: 100px;
+    color:rgb(0, 77, 23);
+}
+
+.homepage__createPostButton {
+    margin-right: 200px;
+    background-color: white;
+    color:rgb(19, 119, 119);
+    border:none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 17px;
+    padding: 25px;
+    height: 100%;
+    width: 200px;
+    top: 20px;
+    right: 20px;
+    position: relative;
+    font-weight: 700;
+}
+
+.homepage__createPostButtonModified {
+    margin-right: 200px;
+    background-color: rgb(19, 119, 119);;
+    color:white;
+    border:none;
+    outline: none;
+    border-radius: 25px;
+    padding: 25px;
+    height: 100%;
+    width: 200px;
+    top: 20px;
+    right: 20px;
+    position: relative;
+    font-weight: 700;
+}
+
+.homepage__createPostButton:hover {
+    background-color: rgb(19, 119, 119);
+    color: white;
+    cursor: pointer;
+}
