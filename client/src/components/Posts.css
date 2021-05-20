@@ -1,9 +1,4 @@
 .posts {
-    padding-top: 20px;
-    display: flex;
-}
-
-.posts__post {
-    top: 20px;
-    left: 20px;
+    top: 760px;
+    position: absolute;
 }

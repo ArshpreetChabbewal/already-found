@@ -3,8 +3,9 @@ import './Homepage.css';
 import { useDispatch } from 'react-redux';
 import Navbar from '../components/Navbar';
 import Form from '../components/Form';
+import Banner from '../components/Banner'
 
-import { getPosts, createPost } from '../actions/posts';
+import { getPosts } from '../actions/posts';
 
 import Posts from '../components/Posts';
 
@@ -33,9 +34,12 @@ const Homepage = () => {
     return (
         <div className={`homepage ${show && 'homepage__preventScroll'}`}>
             <Form toggleForm={toggleForm} show={show} objectCreated={objectCreated} setObjectCreated={setObjectCreated}/>
-            <Navbar toggleForm = {toggleForm} show={show}/>
-            <div className="homepage__posts">
-                <Posts />
+            <div className="homepage__contents">
+                <Navbar />
+                <Banner toggleForm = {toggleForm} show={show}/>
+                <div className="homepage__posts">
+                    <Posts />
+                </div>
             </div>
         </div>
 
