@@ -46,7 +46,7 @@
 }
 
 .banner__view {
-    top: 250px;
+    top: 300px;
     position: relative;
     color: black;
     font-family: 'URW Chancery L', cursive;
@@ -57,7 +57,7 @@
 
 .banner__createPostButton {
     position: relative;
-    top: 140px;
+    top: 170px;
     left: 38%;
     background-color: rgb(19, 119, 119);
     color: white;
