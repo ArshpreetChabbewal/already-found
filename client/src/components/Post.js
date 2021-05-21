@@ -16,7 +16,7 @@ const Post = ({ post }) => {
         <div className="post">
                 <div className="post__front post__face">
                     <h6 className="post__frontTime">{moment(post.createdAt).fromNow()}</h6>
-                    <h1 className="post__frontTitle">{truncate(post.title, 10)}</h1>
+                    <h1 className="post__frontTitle">{truncate(post.title, 100)}</h1>
                     <h2 className="post__frontBar">_______________</h2>
                     <h3 className="post__frontOrg">{post.organization}</h3>
                     <h4 className="post__frontHours">Total Hours: {post.hours}</h4>

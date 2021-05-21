@@ -1,6 +1,8 @@
 import React from 'react';
 import './Navbar.css';
 import SearchIcon from '@material-ui/icons/Search';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const Navbar = ({toggleForm, show}) => {
     return (
@@ -11,15 +13,21 @@ const Navbar = ({toggleForm, show}) => {
                 <h1 className="navbar__title">Already Found!</h1>
             </div>
             <div className="navbar__search">
-                <input className="navbar__searchBar"/>
+                <input className="navbar__searchBar" value="Coming Soon!"/>
                 <button className="navbar__searchButton">
-                    <SearchIcon color={'secondary'}/>
+                    <div className="navbar__searchIcon">
+                        <SearchIcon/>
+                    </div>
                 </button>
             </div>
-            <button className={`${!show && "navbar__createPostButton"} 
-                                ${show && "navbar__createPostButtonModified"}`} onClick={toggleForm}>
-                + Create Post
-            </button>
+            <div className="navbar__icons">
+                <div className="navbar__twitter">
+                    <TwitterIcon fontSize='large'/>
+                </div>
+                <div className="navbar__instagram">
+                    <InstagramIcon fontSize='large' />
+                </div>
+            </div>
         </div>
     )
 }

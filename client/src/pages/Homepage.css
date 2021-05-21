@@ -7,3 +7,9 @@
     height: 100%;
     width: 100%;
 }
+
+.homepage__posts {
+    position: relative;
+    top: 750px;
+    padding-bottom: 100px;
+}

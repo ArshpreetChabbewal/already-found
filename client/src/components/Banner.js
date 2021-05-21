@@ -12,6 +12,9 @@ const Banner = ({show, toggleForm}) => {
                 hover over them, instantly viewing concise information about each position. 
                 So what are you waiting around here for?
             </p>
+            <button className="banner__createPostButton" onClick={toggleForm}>
+                + Create Post
+            </button>
             <h4 className="banner__view">Available Openings</h4>
         </div>
     )

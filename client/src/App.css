@@ -4,4 +4,6 @@
 
 body {
     height: 100%;
+    background: rgb(228, 245, 222);
+    padding-bottom: 30px;
 }

@@ -41,6 +41,9 @@ const Homepage = () => {
                     <Posts />
                 </div>
             </div>
+            <div className="homepage__footer">
+                <h1>content</h1>
+            </div>
         </div>
 
     )

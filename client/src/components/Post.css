@@ -26,13 +26,13 @@
 }
 
 .post__front {
-    background: rgb(5, 88, 88);
+    background: rgb(14, 117, 14);
     color: white;
 }
 
 .post__back {
-    background: white;
-    color: rgb(3, 49, 49);
+    background: rgb(169, 228, 228);
+    color: rgb(4, 39, 39);
     transform: perspective(500px) rotateY(180deg);
 }
 
