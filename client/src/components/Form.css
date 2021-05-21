@@ -1,5 +1,5 @@
 
-.homepage__form {
+.form__screen {
     position: absolute;
     z-index: 20;
     height: 100%;
@@ -14,12 +14,14 @@
 }
 
 .form {
+    border-radius: 20px;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 20%;
     height: 70%;
     width: 60%;
-    background: rgb(157, 134, 211);
+    padding: 2%;
+    background: rgb(140, 185, 216);
 }
 
 .form__heading {
@@ -27,6 +29,8 @@
 }
 
 .form__title {
+    color:rgb(0, 77, 23);
+    font-family: 'Arial Black';
     padding: 10px;
     text-align: center;
     position: absolute;
@@ -34,15 +38,12 @@
 }
 
 .form__exitButton {
-    padding: 10px;
+    padding: 1px;
+    border-color: black;
     position: absolute;
-    right: 0%;
-    color: rgb(156, 87, 87);
-    font-weight: 900;
-    font-size: 15px;
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
+    right: 3%;
+    color: rgb(255, 255, 255);
+    background: rgb(226, 13, 13);
     cursor: pointer;
 }
 
@@ -57,14 +58,20 @@
 }
 
 .form__body > h3 {
+    font-family: 'Georgia';
+    color:rgb(0, 77, 23);
     font-size: 20px;
     font-weight: 80px;
-    padding-top: 20px;
+    padding: 25px 0px 5px 0px;
+}
+
+.form__body > h3 > span {
+    font-size: 13px;
+    padding-left: 5px;
 }
 
 .form__body > textarea {
     resize: none;
-    background: white;
 }
 
 .form__input {
@@ -72,14 +79,15 @@
     outline: none;
     width: 100%;
     border-radius: 5px;
-    padding: 5px;
+    padding: 7px;
     font-size: 15px;
     background: white;
+    font-family: 'Consolas';
 }
 
 .form__submit {
     position: absolute;
-    top: 83%;
+    top: 86%;
     left: 55%;
     margin: 2px;
     padding: 10px 30px 10px 30px;
@@ -95,10 +103,10 @@
 
 .form__clear {
     position: absolute;
-    top: 83%;
-    left: 75%;
+    top: 86%;
+    left: 74%;
     margin: 2px;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 30px 10px 30px;
     font-size: 15px;
     font-weight: 600;
     background:rgb(226, 13, 13);
@@ -109,6 +117,6 @@
     cursor: pointer;
 }
 
-.homepage__hideCreate {
+.form__hideCreate {
     display: none;
 }

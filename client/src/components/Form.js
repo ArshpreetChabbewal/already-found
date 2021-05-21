@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './Form.css';
 import { createPost } from '../actions/posts';
+import CloseIcon from '@material-ui/icons/Close';
 
 const Form = ({toggleForm, show, objectCreated, setObjectCreated}) => {
 
@@ -40,20 +41,23 @@ const Form = ({toggleForm, show, objectCreated, setObjectCreated}) => {
     }, [postData]);
 
     return (
-        <div className={`homepage__form ${!show && 'homepage__hideCreate'}`}>
+        <div className={`form__screen ${!show && 'form__hideCreate'}`}>
             <div className="form__fadedBackground">
             <div className="form">
                 <div className="form__heading">
-                    <h1 className="form__title">Create a Post!</h1>
-                    <button className="form__exitButton" onClick={toggleForm}>Exit</button>
+                    <h1 className="form__title">Create a Post</h1>
+                    <button className="form__exitButton" onClick={toggleForm}>
+                        <CloseIcon fontSize='medium'/>
+                    </button>
                 </div>
                 <div className="form__body">
-                        <h3>Title</h3>
-                        <input className="form__input" id="form__inputTitle" type="text"/>
-                        <h3>Organization</h3>
-                        <input className="form__input" id="form__inputOrganization" type="text"/>
-                        <h3>Description</h3>
-                        <textarea className="form__input" id="form__inputDescription" rows="3"></textarea>
+                        <h3>Title <span>(50 Character Limit)</span></h3>
+                        <input className="form__input" id="form__inputTitle" type="text" maxLength="50"/>
+                        <h3>Organization <span>(50 Character Limit)</span></h3>
+                        <input className="form__input" id="form__inputOrganization" type="text" maxLength="50"/>
+                        <h3>Description <span>(150 Character Limit)</span></h3>
+                        <textarea className="form__input" id="form__inputDescription" rows="3" maxLength="150">
+                        </textarea>
                         <h3>Number of Hours</h3>
                         <input className="form__input" id="form__inputHours" type="number" />
                 </div>
